@@ -1,0 +1,60 @@
+{
+    "inventory_hostname": "controller-1",
+    "openstack": {
+        "storage_backend": "lvm"
+    },
+    "ceph_configured": false,
+    "localstorage": {
+        "compute": {
+            "home": {
+                "lvm_size": "5000",
+                "mount_point": "/home",
+                "lvm_name": "home"
+            },
+            "log": {
+                "lvm_size": "10000",
+                "mount_point": "/var/log",
+                "lvm_name": "log"
+            },
+            "audit": {
+                "lvm_size": "11000",
+                "mount_point": "/var/log/audit",
+                "lvm_name": "audit"
+            }
+        },
+        "controller": {
+            "home": {
+                "lvm_size": "10000",
+                "mount_point": "/home",
+                "lvm_name": "home"
+            },
+            "log": {
+                "lvm_size": "5000",
+                "mount_point": "/var/log",
+                "lvm_name": "log"
+            }
+        },
+        "storage": {
+            "home": {
+                "lvm_size": "5000",
+                "mount_point": "/home",
+                "lvm_name": "home"
+            },
+            "log": {
+                "lvm_size": "5000",
+                "mount_point": "/var/log",
+                "lvm_name": "log"
+            },
+            "audit": {
+                "lvm_size": "10000",
+                "mount_point": "/var/log/audit",
+                "lvm_name": "audit"
+            }
+        }
+    },
+    "hosts": {
+        "controller-1": {
+	    "service_profiles":  ["controller", "compute", "storage"]
+        }
+    }
+}

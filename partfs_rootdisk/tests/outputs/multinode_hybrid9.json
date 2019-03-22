@@ -1,0 +1,44 @@
+{
+    "device_mapping": [
+        {
+            "lvm_size": "10%VG",
+            "mount_point": "/home",
+            "lvm_name": "home"
+        },
+        {
+            "lvm_size": "15%VG",
+            "mount_point": "/var/log",
+            "lvm_name": "log"
+        },
+        {
+            "lvm_size": "10%VG",
+            "mount_point": "/var/log/audit",
+            "lvm_name": "audit"
+        },
+        {
+            "lvm_size": "20%VG",
+            "mount_point": "/var/lib/docker",
+            "lvm_name": "docker"
+        },
+        {
+            "lvm_size": "19%VG",
+            "mount_point": "/srv/node/swift",
+            "lvm_name": "swift"
+        },
+        {
+            "lvm_size": "1%VG",
+            "mount_point": "/var/lib/ceph/mgr",
+            "lvm_name": "cephmgr"
+        },
+        {
+            "lvm_size": "10%VG",
+            "mount_point": "/var/lib/ceph/mon",
+            "lvm_name": "cephmon"
+        },
+        {
+            "lvm_size": "15%VG",
+            "mount_point": "/var/lib/cinder",
+            "lvm_name": "cinder"
+        } 
+    ]
+}

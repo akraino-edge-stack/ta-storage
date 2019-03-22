@@ -1,0 +1,147 @@
+{
+    "inventory_hostname": "compute-1",
+    "openstack": {
+        "storage_backend": "ceph"
+    },
+    "ceph_configured": true,
+    "localstorage": {
+        "controller": {
+            "home": {
+                "lvm_size": "variable",
+                "mount_point": "/home",
+                "lvm_name": "home"
+            },
+            "log": {
+                "lvm_size": "15%VG",
+                "mount_point": "/var/log",
+                "lvm_name": "log"
+            },
+            "audit": {
+                "lvm_size": "10%VG",
+                "mount_point": "/var/log/audit",
+                "lvm_name": "audit"
+            },
+            "cinder": {
+                "lvm_size": "15%VG",
+                "mount_point": "/var/lib/cinder",
+                "lvm_name": "cinder"
+            }
+        },
+        "caas_master": {
+            "home": {
+                "lvm_size": "variable",
+                "mount_point": "/home",
+                "lvm_name": "home"
+            },
+            "log": {
+                "lvm_size": "15%VG",
+                "mount_point": "/var/log",
+                "lvm_name": "log"
+            },
+            "audit": {
+                "lvm_size": "10%VG",
+                "mount_point": "/var/log/audit",
+                "lvm_name": "audit"
+            },
+            "docker": {
+                "lvm_size": "20%VG",
+                "mount_point": "/var/lib/docker",
+                "lvm_name": "docker"
+            },
+            "swift": {
+                "lvm_size": "19%VG",
+                "mount_point": "/srv/node/swift",
+                "lvm_name": "swift"
+            }
+        },
+        "cephcontroller": {
+            "cephmgr": {
+                "lvm_size": "1%VG",
+                "mount_point": "/var/lib/ceph/mgr",
+                "lvm_name": "cephmgr"
+            },
+            "cephmon": {
+                "lvm_size": "10%VG",
+                "mount_point": "/var/lib/ceph/mon",
+                "lvm_name": "cephmon"
+            },
+            "cinder": {
+                "lvm_size": "15%VG",
+                "mount_point": "/var/lib/cinder",
+                "lvm_name": "cinder"
+            },
+            "home": {
+                "lvm_size": "variable",
+                "mount_point": "/home",
+                "lvm_name": "home"
+            },
+            "log": {
+                "lvm_size": "15%VG",
+                "mount_point": "/var/log",
+                "lvm_name": "log"
+            },
+            "audit": {
+                "lvm_size": "10%VG",
+                "mount_point": "/var/log/audit",
+                "lvm_name": "audit"
+            }
+        },
+        "compute": {
+            "home": {
+                "lvm_size": "variable",
+                "mount_point": "/home",
+                "lvm_name": "home"
+            },
+            "log": {
+                "lvm_size": "15%VG",
+                "mount_point": "/var/log",
+                "lvm_name": "log"
+            },
+            "audit": {
+                "lvm_size": "10%VG",
+                "mount_point": "/var/log/audit",
+                "lvm_name": "audit"
+            }
+        },
+        "storage": {
+            "home": {
+                "lvm_size": "variable",
+                "mount_point": "/home",
+                "lvm_name": "home"
+            },
+            "log": {
+                "lvm_size": "15%VG",
+                "mount_point": "/var/log",
+                "lvm_name": "log"
+            },
+            "audit": {
+                "lvm_size": "10%VG",
+                "mount_point": "/var/log/audit",
+                "lvm_name": "audit"
+            }
+        },
+        "caas_worker": {
+            "home": {
+                "lvm_size": "variable",
+                "mount_point": "/home",
+                "lvm_name": "home"
+            },
+            "log": {
+                "lvm_size": "15%VG",
+                "mount_point": "/var/log",
+                "lvm_name": "log"
+            },
+            "audit": {
+                "lvm_size": "10%VG",
+                "mount_point": "/var/log/audit",
+                "lvm_name": "audit"
+            }
+        }
+
+    },
+    "hosts": {
+        "compute-1": {
+            "service_profiles":  ["storage", "caas_worker"]
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "device_mapping": [
+        {
+            "lvm_size": "10000",
+            "mount_point": "/home",
+	    "lvm_name": "home"
+        },
+        {
+            "lvm_size": "10000",
+            "mount_point": "/var/log",
+	    "lvm_name": "log"
+        },
+        {
+            "lvm_size": "10000",
+            "mount_point": "/var/log/audit",
+	    "lvm_name": "audit"
+        }
+    ]
+}

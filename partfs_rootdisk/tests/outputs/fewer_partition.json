@@ -1,0 +1,9 @@
+{
+    "device_mapping": [
+        {
+            "lvm_size": "5000",
+            "mount_point": "/var/log",
+	    "lvm_name": "log"
+        }
+    ]
+}
