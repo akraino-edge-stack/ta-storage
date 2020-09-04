@@ -17,8 +17,8 @@ logical_volumes:
   - lvm_name: "docker"
     lvm_size: "20%VG"
     mount_point: "/var/lib/docker"
-    mount_opts: noatime,nodiratime,nobarrier,logbufs=8,pquota
+    mount_opts: noatime,nodiratime,logbufs=8,pquota
   - lvm_name: "swift"
     lvm_size: "19%VG"
     mount_point: "/srv/node/swift"
-    mount_opts: noatime,nodiratime,nobarrier 
+    mount_opts: noatime,nodiratime 
