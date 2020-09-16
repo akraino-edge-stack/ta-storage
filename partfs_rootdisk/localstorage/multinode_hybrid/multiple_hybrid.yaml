@@ -25,4 +25,4 @@ logical_volumes:
   - lvm_name: "mariadb"
     lvm_size: "10%VG"
     mount_point: "/var/lib/mysql"
-    mount_opts: noatime,nodiratime,nosuid,noexec
+    mount_opts: "noatime,nodiratime,nosuid,noexec,context=system_u:object_r:mysqld_db_t:s0"
