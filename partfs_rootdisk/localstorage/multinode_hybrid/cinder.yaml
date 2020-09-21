@@ -16,6 +16,6 @@ service_profiles:
   - cephcontroller
 logical_volumes:
   - lvm_name: "cinder"
-    lvm_size: "15%VG"
+    lvm_size: "5%VG"
     mount_point: "/var/lib/cinder"
     mount_opts: noatime,nodev,nosuid,noexec

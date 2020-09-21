@@ -20,6 +20,6 @@ logical_volumes:
     mount_point: "/var/lib/ceph/mgr"
     mount_opts: noatime,nodev,nosuid,noexec
   - lvm_name: "cephmon"
-    lvm_size: "10%VG"
+    lvm_size: "5%VG"
     mount_point: "/var/lib/ceph/mon"
     mount_opts: noatime,nodev,nosuid,noexec

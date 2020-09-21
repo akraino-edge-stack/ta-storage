@@ -19,10 +19,10 @@ logical_volumes:
     mount_point: "/var/lib/docker"
     mount_opts: noatime,nodiratime,logbufs=8,pquota
   - lvm_name: "swift"
-    lvm_size: "9%VG"
+    lvm_size: "2%VG"
     mount_point: "/srv/node/swift"
     mount_opts: noatime,nodiratime 
   - lvm_name: "mariadb"
-    lvm_size: "10%VG"
+    lvm_size: "2%VG"
     mount_point: "/var/lib/mysql"
     mount_opts: noatime,nodiratime,nosuid,noexec

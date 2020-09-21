@@ -19,15 +19,7 @@ service_profiles:
   - cephcontroller
   - compute
 logical_volumes:
-  - lvm_name: "audit"
-    lvm_size: "10%VG"
-    mount_point: "/var/log/audit"
-    mount_opts: noatime,nodev,nosuid,noexec
   - lvm_name: "log"
-    lvm_size: "15%VG"
+    lvm_size: "variable"
     mount_point: "/var/log"
     mount_opts: noatime,nodev,nosuid,noexec
-  - lvm_name: "home"
-    lvm_size: "variable"
-    mount_point: "/home"
-    mount_opts: noatime,nodev,nosuid
