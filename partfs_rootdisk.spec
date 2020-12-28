@@ -11,9 +11,12 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
+%define RPM_MINOR_VERSION 2
+
 Name:       partfs_rootdisk
 Version:    %{_version}
-Release:    1%{?dist}
+Release:    %{RPM_MINOR_VERSION}%{?dist}
 Summary:    partfs_rootdisk
 License:    %{_platform_license}
 Source0:    %{name}-%{version}.tar.gz
