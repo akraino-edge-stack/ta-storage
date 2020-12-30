@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-%define RPM_MINOR_VERSION 2
+%define RPM_MINOR_VERSION 3
 
 Name:       partfs_rootdisk
 Version:    %{_version}

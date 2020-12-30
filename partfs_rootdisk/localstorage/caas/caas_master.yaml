@@ -29,6 +29,8 @@ logical_volumes:
   - lvm_name: "home"
     lvm_size: "2%VG"
     mount_point: "/home"
+    mount_opts: noatime,nodev,nosuid
   - lvm_name: "tmp"
     lvm_size: "4%VG"
     mount_point: "/tmp"
+    mount_opts: defaults
